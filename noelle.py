@@ -43,14 +43,14 @@ show_buy_menu() #output
 
 menu_select = take_input() #input
 
-#print(menu_select)
+print(menu_select)
 
 while (menu_select != 'A' and  menu_select != 'B' and menu_select != 'C'):
     error_message()
 
     show_buy_menu()
 
-    menu_select = take_input() #input
+    menu_select = take_input() #input LCV 
     
-    
+print(menu_select + " .) while exit")
 
