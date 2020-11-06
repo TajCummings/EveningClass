@@ -22,10 +22,11 @@ def show_buy_menu():
 def take_input():
     print("Enter your Selection here:")
     selection = input()
-    return selection
+    selection = selection.upper()
+    return selection[0]
 
 def error_message():
-    print("Error")
+    print("Invalid Selection")
 
 def name_of_function():
     print("Code statment 1")
@@ -42,8 +43,14 @@ show_buy_menu() #output
 
 menu_select = take_input() #input
 
-print("You selected : " + menu_select) #output
-print("First letter : " + menu_select[0]) #output
+#print(menu_select)
 
+while (menu_select != 'A' and  menu_select != 'B' and menu_select != 'C'):
+    error_message()
+
+    show_buy_menu()
+
+    menu_select = take_input() #input
+    
     
 
